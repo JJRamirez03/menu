@@ -9,8 +9,15 @@
   <link rel="stylesheet" type="text/css" href="estilos.css" />
   <link rel="stylesheet" type="text/css" href="mqueries.css" />
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet' />
- 
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
+  <script> 
+      $(document).ready(function(){
+      $('#icon').click(function(){
+      $('ul').toggleClass('show');
+      });
+      });
+  </script>
 </head>
 
 <body>
@@ -18,13 +25,19 @@
     <!--INICIO DE LA CABECERA-->
     <header id="header">
       <div id="wrap">
+        <div class="logo">
+            <a href="index.html"> <img src="./img/fav-logo/Logocomp.png" alt="Jevir Web Design" /></a>
+          </div>
         <nav id="menu">
-          <ul>
-            <li>Inicio</li>
-            <li>Portafolio</li>
-            <li>Servicios</li>
-            <li>Contáctame</li>
-          </ul>
+            <ul>
+              <li><a class="active" href="index.html">Inicio</a></li>
+              <li><a href="portafolio.html">Portafolio</a></li>
+              <li><a href="servicios.html">Servicios</a></li>
+              <li><a href="form.html">Contáctame</a></li>
+            </ul>
+          <label id="icon">
+            <i class='bx bx-menu' style='color:#ffffff' ></i>
+          </label>
         </nav>
       </div>
     </header>
